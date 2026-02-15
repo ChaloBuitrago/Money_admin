@@ -23,4 +23,10 @@ class Pago{
       fecha: DateTime.parse(map['fecha']),
     );
   }
+
+  ///Método auxiliar para generar resumen del pago
+  String generarResumen() {
+    return "Pago #$id de \$${monto.toStringAsFixed(2)}"
+        "para el préstamo $prestamoId, fecha: ${fecha.toIso8601String()}";
+  }
 }

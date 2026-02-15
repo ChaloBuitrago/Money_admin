@@ -21,4 +21,9 @@ class User {
       telefono: map['telefono'],
     );
   }
+
+  // Método auxiliar para generar resumen del usuario
+  String generarResumen() {
+    return "Usuario #$id: $nombre, Teléfono: $telefono";
+  }
 }
